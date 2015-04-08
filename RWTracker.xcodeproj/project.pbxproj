@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC830691AD4648000CEF7B0 /* PostContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC830681AD4648000CEF7B0 /* PostContentController.swift */; };
 		0FCB0D651AD3778500FDA650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0D641AD3778500FDA650 /* AppDelegate.swift */; };
 		0FCB0D671AD3778500FDA650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0D661AD3778500FDA650 /* ViewController.swift */; };
 		0FCB0D6A1AD3778500FDA650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D681AD3778500FDA650 /* Main.storyboard */; };
 		0FCB0D6C1AD3778500FDA650 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D6B1AD3778500FDA650 /* Images.xcassets */; };
 		0FCB0D6F1AD3778500FDA650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D6D1AD3778500FDA650 /* LaunchScreen.xib */; };
 		0FCB0D7B1AD3778500FDA650 /* RWTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0D7A1AD3778500FDA650 /* RWTrackerTests.swift */; };
+		0FCB0D8D1AD377E800FDA650 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0D8C1AD377E800FDA650 /* InterfaceController.swift */; };
+		0FCB0D8F1AD377E800FDA650 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D8E1AD377E800FDA650 /* Images.xcassets */; };
+		0FCB0D931AD377E800FDA650 /* RWTracker WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D921AD377E800FDA650 /* RWTracker WatchKit App.app */; };
+		0FCB0D9B1AD377E800FDA650 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D991AD377E800FDA650 /* Interface.storyboard */; };
+		0FCB0D9D1AD377E800FDA650 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCB0D9C1AD377E800FDA650 /* Images.xcassets */; };
+		0FCB0DA01AD377E800FDA650 /* RWTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0FCB0D881AD377E800FDA650 /* RWTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0FCB0DA91AD3795B00FDA650 /* PostRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0DA81AD3795B00FDA650 /* PostRowController.swift */; };
+		0FCB0DAB1AD37C8A00FDA650 /* PostDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB0DAA1AD37C8A00FDA650 /* PostDetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +32,39 @@
 			remoteGlobalIDString = 0FCB0D5E1AD3778500FDA650;
 			remoteInfo = RWTracker;
 		};
+		0FCB0D941AD377E800FDA650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCB0D571AD3778500FDA650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FCB0D911AD377E800FDA650;
+			remoteInfo = "RWTracker WatchKit App";
+		};
+		0FCB0D9E1AD377E800FDA650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCB0D571AD3778500FDA650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FCB0D871AD377E800FDA650;
+			remoteInfo = "RWTracker WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0FCB0DA71AD377E800FDA650 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0FCB0DA01AD377E800FDA650 /* RWTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0F0CEC341AD479E600FB77C0 /* RWTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RWTracker.entitlements; sourceTree = "<group>"; };
+		0FC830681AD4648000CEF7B0 /* PostContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostContentController.swift; sourceTree = "<group>"; };
 		0FCB0D5F1AD3778500FDA650 /* RWTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCB0D631AD3778500FDA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCB0D641AD3778500FDA650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +75,16 @@
 		0FCB0D741AD3778500FDA650 /* RWTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCB0D791AD3778500FDA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCB0D7A1AD3778500FDA650 /* RWTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWTrackerTests.swift; sourceTree = "<group>"; };
+		0FCB0D881AD377E800FDA650 /* RWTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RWTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCB0D8B1AD377E800FDA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCB0D8C1AD377E800FDA650 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0FCB0D8E1AD377E800FDA650 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FCB0D921AD377E800FDA650 /* RWTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RWTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCB0D981AD377E800FDA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCB0D9A1AD377E800FDA650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0FCB0D9C1AD377E800FDA650 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FCB0DA81AD3795B00FDA650 /* PostRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRowController.swift; sourceTree = "<group>"; };
+		0FCB0DAA1AD37C8A00FDA650 /* PostDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FCB0D851AD377E800FDA650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +117,8 @@
 			children = (
 				0FCB0D611AD3778500FDA650 /* RWTracker */,
 				0FCB0D771AD3778500FDA650 /* RWTrackerTests */,
+				0FCB0D891AD377E800FDA650 /* RWTracker WatchKit Extension */,
+				0FCB0D961AD377E800FDA650 /* RWTracker WatchKit App */,
 				0FCB0D601AD3778500FDA650 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +128,8 @@
 			children = (
 				0FCB0D5F1AD3778500FDA650 /* RWTracker.app */,
 				0FCB0D741AD3778500FDA650 /* RWTrackerTests.xctest */,
+				0FCB0D881AD377E800FDA650 /* RWTracker WatchKit Extension.appex */,
+				0FCB0D921AD377E800FDA650 /* RWTracker WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +137,7 @@
 		0FCB0D611AD3778500FDA650 /* RWTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0F0CEC341AD479E600FB77C0 /* RWTracker.entitlements */,
 				0FCB0D641AD3778500FDA650 /* AppDelegate.swift */,
 				0FCB0D661AD3778500FDA650 /* ViewController.swift */,
 				0FCB0D681AD3778500FDA650 /* Main.storyboard */,
@@ -112,6 +173,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0FCB0D891AD377E800FDA650 /* RWTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0FCB0D8C1AD377E800FDA650 /* InterfaceController.swift */,
+				0FC830681AD4648000CEF7B0 /* PostContentController.swift */,
+				0FCB0DA81AD3795B00FDA650 /* PostRowController.swift */,
+				0FCB0DAA1AD37C8A00FDA650 /* PostDetailsController.swift */,
+				0FCB0D8E1AD377E800FDA650 /* Images.xcassets */,
+				0FCB0D8A1AD377E800FDA650 /* Supporting Files */,
+			);
+			path = "RWTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0FCB0D8A1AD377E800FDA650 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FCB0D8B1AD377E800FDA650 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FCB0D961AD377E800FDA650 /* RWTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0FCB0D991AD377E800FDA650 /* Interface.storyboard */,
+				0FCB0D9C1AD377E800FDA650 /* Images.xcassets */,
+				0FCB0D971AD377E800FDA650 /* Supporting Files */,
+			);
+			path = "RWTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		0FCB0D971AD377E800FDA650 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FCB0D981AD377E800FDA650 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +222,12 @@
 				0FCB0D5B1AD3778500FDA650 /* Sources */,
 				0FCB0D5C1AD3778500FDA650 /* Frameworks */,
 				0FCB0D5D1AD3778500FDA650 /* Resources */,
+				0FCB0DA71AD377E800FDA650 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0FCB0D9F1AD377E800FDA650 /* PBXTargetDependency */,
 			);
 			name = RWTracker;
 			productName = RWTracker;
@@ -150,6 +252,39 @@
 			productReference = 0FCB0D741AD3778500FDA650 /* RWTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0FCB0D871AD377E800FDA650 /* RWTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FCB0DA41AD377E800FDA650 /* Build configuration list for PBXNativeTarget "RWTracker WatchKit Extension" */;
+			buildPhases = (
+				0FCB0D841AD377E800FDA650 /* Sources */,
+				0FCB0D851AD377E800FDA650 /* Frameworks */,
+				0FCB0D861AD377E800FDA650 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FCB0D951AD377E800FDA650 /* PBXTargetDependency */,
+			);
+			name = "RWTracker WatchKit Extension";
+			productName = "RWTracker WatchKit Extension";
+			productReference = 0FCB0D881AD377E800FDA650 /* RWTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		0FCB0D911AD377E800FDA650 /* RWTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FCB0DA11AD377E800FDA650 /* Build configuration list for PBXNativeTarget "RWTracker WatchKit App" */;
+			buildPhases = (
+				0FCB0D901AD377E800FDA650 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RWTracker WatchKit App";
+			productName = "RWTracker WatchKit App";
+			productReference = 0FCB0D921AD377E800FDA650 /* RWTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +296,23 @@
 				TargetAttributes = {
 					0FCB0D5E1AD3778500FDA650 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = SUBZ24DP5B;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0FCB0D731AD3778500FDA650 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 0FCB0D5E1AD3778500FDA650;
+					};
+					0FCB0D871AD377E800FDA650 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = SUBZ24DP5B;
+					};
+					0FCB0D911AD377E800FDA650 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +331,8 @@
 			targets = (
 				0FCB0D5E1AD3778500FDA650 /* RWTracker */,
 				0FCB0D731AD3778500FDA650 /* RWTrackerTests */,
+				0FCB0D871AD377E800FDA650 /* RWTracker WatchKit Extension */,
+				0FCB0D911AD377E800FDA650 /* RWTracker WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +352,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FCB0D861AD377E800FDA650 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCB0D931AD377E800FDA650 /* RWTracker WatchKit App.app in Resources */,
+				0FCB0D8F1AD377E800FDA650 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FCB0D901AD377E800FDA650 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCB0D9B1AD377E800FDA650 /* Interface.storyboard in Resources */,
+				0FCB0D9D1AD377E800FDA650 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +393,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FCB0D841AD377E800FDA650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCB0DA91AD3795B00FDA650 /* PostRowController.swift in Sources */,
+				0FCB0D8D1AD377E800FDA650 /* InterfaceController.swift in Sources */,
+				0FCB0DAB1AD37C8A00FDA650 /* PostDetailsController.swift in Sources */,
+				0FC830691AD4648000CEF7B0 /* PostContentController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +411,16 @@
 			isa = PBXTargetDependency;
 			target = 0FCB0D5E1AD3778500FDA650 /* RWTracker */;
 			targetProxy = 0FCB0D751AD3778500FDA650 /* PBXContainerItemProxy */;
+		};
+		0FCB0D951AD377E800FDA650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FCB0D911AD377E800FDA650 /* RWTracker WatchKit App */;
+			targetProxy = 0FCB0D941AD377E800FDA650 /* PBXContainerItemProxy */;
+		};
+		0FCB0D9F1AD377E800FDA650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FCB0D871AD377E800FDA650 /* RWTracker WatchKit Extension */;
+			targetProxy = 0FCB0D9E1AD377E800FDA650 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +439,14 @@
 				0FCB0D6E1AD3778500FDA650 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0FCB0D991AD377E800FDA650 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FCB0D9A1AD377E800FDA650 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +533,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RWTracker/RWTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RWTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +548,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RWTracker/RWTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RWTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -386,6 +593,62 @@
 			};
 			name = Release;
 		};
+		0FCB0DA21AD377E800FDA650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RWTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "RWTracker WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		0FCB0DA31AD377E800FDA650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = RWTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "RWTracker WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		0FCB0DA51AD377E800FDA650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RWTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0FCB0DA61AD377E800FDA650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "RWTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +668,7 @@
 				0FCB0D801AD3778500FDA650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FCB0D811AD3778500FDA650 /* Build configuration list for PBXNativeTarget "RWTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +677,25 @@
 				0FCB0D831AD3778500FDA650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FCB0DA11AD377E800FDA650 /* Build configuration list for PBXNativeTarget "RWTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FCB0DA21AD377E800FDA650 /* Debug */,
+				0FCB0DA31AD377E800FDA650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FCB0DA41AD377E800FDA650 /* Build configuration list for PBXNativeTarget "RWTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FCB0DA51AD377E800FDA650 /* Debug */,
+				0FCB0DA61AD377E800FDA650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
